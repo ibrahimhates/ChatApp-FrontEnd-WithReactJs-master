@@ -25,7 +25,7 @@ const App = () => {
 	const connect = async () => {
 		try {
 			const connection = new HubConnectionBuilder()
-				.withUrl('https://192.168.1.139:7157/chat')
+				.withUrl('https://chatappapi.askforetu.com.tr/chat')
 				.configureLogging(LogLevel.Information)
 				.build();
 
