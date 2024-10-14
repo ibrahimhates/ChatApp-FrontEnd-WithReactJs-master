@@ -17,10 +17,10 @@ const SendMessage = ({ sendMessage, sendAudioToBackend}) => {
 				type: "audio",
 				mimeType: "audio/webm",
 				recorderType: StereoAudioRecorder,
-				timeSlice: 50,
-				desiredSampRate: 16000,
+				timeSlice: 20,
+				desiredSampRate: 64000,
 				numberOfAudioChannels: 1,
-				bufferSize: 2048,
+				bufferSize: 4096,
 				ondataavailable: (blob) => {
 				  console.log("Blob okunuyor: ", blob);
 			  
